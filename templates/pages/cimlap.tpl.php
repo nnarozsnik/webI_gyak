@@ -43,8 +43,8 @@ frameborder="0"
 allowfullscreen>
 </iframe>
 
-<video width="600" controls>
-    <source src="./video/sajatvideo.mp4" type="video/mp4">
+<video height="315" controls>
+    <source src="templates/pages/video/sajatvideo.mp4" type="video/mp4">
 </video>
 
 <p> Választott weboldal fizikai címe:
