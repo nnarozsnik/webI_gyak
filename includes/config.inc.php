@@ -25,7 +25,11 @@ $oldalak = array(
     'kilepes' => array('fajl' => 'kilepes', 'szoveg' => 'Kilépés', 'menun' => array(0,1)),
     'belep' => array('fajl' => 'belep', 'szoveg' => '', 'menun' => array(0,0)),
     'regisztral' => array('fajl' => 'regisztral', 'szoveg' => '', 'menun' => array(0,0)),
-
+'uzenetek' => array(
+    'fajl' => 'uzenetek',
+    'szoveg' => 'Üzenetek',
+    'menun' => array(0,1)
+),
     'kapcsolat_kuld' => array(
         'fajl' => 'kapcsolat_kuld',
         'szoveg' => '',
