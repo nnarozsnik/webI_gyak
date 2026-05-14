@@ -1,11 +1,12 @@
 <h1>Képgaléria</h1>
 
 <?php
-$kepek = scandir("kepek");
+$files = array_diff(scandir("kepek"), ['.', '..']);
 
-foreach ($kepek as $kep) {
+foreach ($files as $kep) {
 
-    if ($kep == "." || $kep == "..") continue;
+    $ext = strtolower(pathinfo($kep, PATHINFO_EXTENSION));
+    if(!in_array($ext, ['jpg','jpeg','png'])) continue;
 
     echo "
     <a href='kepek/$kep' target='_blank'>
@@ -13,11 +14,7 @@ foreach ($kepek as $kep) {
     </a>
     ";
 }
-
-
-
 ?>
-
 
 <?php if(isset($_SESSION['login'])): ?>
 
