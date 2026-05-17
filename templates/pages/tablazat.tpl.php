@@ -17,6 +17,7 @@ while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
     <a href='index.php?torol={$row['id']}'>Törlés</a>
 </td>";
     echo "</tr>";
+
 }
 
 echo "</table>";
@@ -24,7 +25,7 @@ echo "</table>";
 
 <h3>Új park</h3>
 
-<form method="POST" action="index.php?oldal=uj">
+<form method="POST" action="index.php?uj">
     <input type="text" name="nev" required>
     <button type="submit">Hozzáadás</button>
 </form>

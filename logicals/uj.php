@@ -6,5 +6,5 @@ if (isset($_POST['nev'])) {
     $stmt->execute([':nev' => $_POST['nev']]);
 }
 
-header("Location: index.php?oldal=tablazat");
+header("Location: index.php?tablazat");
 exit;

@@ -1,15 +1,36 @@
 <?php
+session_start();
+
 include('./includes/config.inc.php');
 
 $oldal = $_SERVER['QUERY_STRING'];
 
 $id = null;
 
-if (strpos($oldal, '=') !== false) {
+/* pl: edit=1 */
+if (strpos($oldal, '=') !== false && strpos($oldal, '&') === false) {
+
     $tmp = explode('=', $oldal);
+
     $oldal = $tmp[0];
     $id = $tmp[1];
+
     $_GET['id'] = $id;
+}
+
+
+if (strpos($oldal, '&') !== false) {
+
+    $tmp = explode('&', $oldal);
+
+    $oldal = $tmp[0];
+
+    if (isset($tmp[1])) {
+
+        $id = str_replace('id=', '', $tmp[1]);
+
+        $_GET['id'] = $id;
+    }
 }
 
 
