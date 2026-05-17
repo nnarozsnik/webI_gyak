@@ -4,9 +4,9 @@ $ablakcim = array(
 );
 
 $fejlec = array(
-    'kepforras' => 'logo.png',
-    'kepalt' => 'logo',
-	'cim' => 'Mini honlap',
+    'kepforras' => '',
+    'kepalt' => '',
+	'cim' => 'Nemzeti Parkok',
 	'motto' => ''
 );
 
