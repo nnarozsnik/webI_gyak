@@ -35,17 +35,10 @@ $oldalak = array(
         'szoveg' => '',
         'menun' => array(0,0)
     ),
-
-'tablazat' => array(
-    'fajl' => 'tablazat',
-    'szoveg' => 'CRUD',
-    'menun' => array(1,1)
-),
-'uj' => array('fajl' => 'tablazat', 'szoveg' => '', 'menun' => array(0,0)),
-'torol' => array('fajl' => 'tablazat', 'szoveg' => '', 'menun' => array(0,0)),
+'tablazat' => array('fajl' => 'tablazat', 'szoveg' => 'CRUD', 'menun' => array(1,1)),
+'uj' => array('fajl' => 'uj', 'szoveg' => '', 'menun' => array(0,0)),
+'torol' => array('fajl' => 'torol', 'szoveg' => '', 'menun' => array(0,0)),
 'edit' => array('fajl' => 'edit', 'szoveg' => '', 'menun' => array(0,0)),
-'update' => array('fajl' => 'update', 'szoveg' => '', 'menun' => array(0,0)),
-
 );
 
 
